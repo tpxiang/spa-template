@@ -30,28 +30,6 @@ export const removeStorageItem = (name) => {
  * 清空localStorage
  */
 export const clearStorage = () => window.localStorage.clear()
-export const getBeforeDate = (m) => {
-  const n = m
-  let s = ''
-  const d = new Date()
-  let year = d.getFullYear()
-  let mon = d.getMonth() + 1
-  let day = d.getDate()
-  if (day <= n) {
-    if (mon > 1) {
-      mon -= 1
-    } else {
-      year -= 1
-      mon = 12
-    }
-  }
-  d.setDate(d.getDate() - n)
-  year = d.getFullYear()
-  mon = d.getMonth() + 1
-  day = d.getDate()
-  s = `${year}-${mon < 10 ? (`0${mon}`) : mon}-${day < 10 ? (`0${day}`) : day}`
-  return s
-}
 
 // 检测浏览器内核
 export const getBrowserType = () => {

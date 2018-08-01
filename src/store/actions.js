@@ -21,6 +21,7 @@ const actions = {
       const res = await apis.user.fetchUser(payload, {
         headers: { 'X-Strict-Route': 'loose' }
       })
+      console.log(res)
       if (res) {
         commit(MutationTypes.SET_USER, res.data)
       }

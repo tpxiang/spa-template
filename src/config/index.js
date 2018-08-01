@@ -16,6 +16,8 @@ export const statusCode = {
   INVALID_FILE_TYPE: 3005 // 无效文件类型
 }
 
+export const projectTitle = '前端项目模板'
+
 export const baseURL = '/'
 // KEYS
 export const KEYS = {

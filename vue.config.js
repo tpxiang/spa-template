@@ -41,7 +41,7 @@ module.exports = {
   devServer: {
     open: true,
     host: '0.0.0.0',
-    port: 8081,
+    port: 8080,
     hot: true,
     proxy: null // 设置代理
   },

@@ -26,7 +26,8 @@ export default {
   },
   methods: {
     onSubmit() {
-      Api.user.login().then(() => {
+      Api.user.login().then((res) => {
+        console.log(res)
         this.$message({
           showClose: true,
           message: '登录成功',
