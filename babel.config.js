@@ -2,7 +2,7 @@ module.exports = {
   presets: [
     '@vue/app'
   ],
-  plugins: ['transform-vue-jsx', [
+  plugins: [[
     'component', {
       libraryName: 'element-ui',
       styleLibraryName: 'theme-chalk'
